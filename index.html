@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Youtube 인기 동영상</title>
+    <script type="module" crossorigin src="/assets/index-_Z6hv6RK.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-BmNlIK-G.css">
+  </head>
+  <body>
+    <nav class="navbar">
+        <div class="nav-left">
+            <a href="#">YOUTUBE TREND VIEW</a>
+        </div>
+        <div class="nav-right">
+           <div class="cir">TUBE</div>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <section class="content-section">
+            <h2>좋아요 순 인기 동영상</h2>
+            <div id="likesVideos" class="content-grid"></div>
+        </section>
+
+        <section class="content-section">
+            <h2>댓글 순 인기 동영상</h2>
+            <div id="commentsVideos" class="content-grid"></div>
+        </section>
+
+        <div class="side-content">
+            <section class="trending-section">
+                <h2>인기 키워드</h2>
+                <div id="trendingKeywords" class="keywords-container"></div>
+            </section>
+
+            <section class="trending-section">
+                <h2>유튜브 실시간 검색어</h2>
+                <div id="realtimeSearchTerms" class="search-terms-container"></div>
+            </section>
+        </div>
+    </main>
+
+    <div id="videoModal" class="video-modal">
+        <div class="modal-content">
+            <span class="close-modal" id="closeModalBtn">&times;</span>
+            <div class="video-container">
+                <iframe id="videoFrame" width="100%" height="100%" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <h3 id="videoTitle"></h3>
+                <div class="video-meta">
+                    <span id="videoViews"></span>
+                    <span id="videoDate"></span>
+                </div>
+                <p id="videoDescription"></p>
+            </div>
+        </div>
+    </div>
+  </body>
+</html>
